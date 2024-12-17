@@ -1,0 +1,81 @@
+\documentclass[times, utf8, zavrsni, numeric]{fer}
+\usepackage{booktabs}
+\usepackage{pdfpages}
+\usepackage{comment}
+\usepackage{float}
+\usepackage{amsthm}
+\usepackage{amsmath}
+\usepackage{amssymb}
+
+\newtheorem{theorem}{Teorem}
+\newtheorem{definition}{Definicija}
+\newtheorem{korolar}{Korolar}
+\newtheorem{proposition}{Propozicija}
+
+
+\begin{document}
+
+\thesisnumber{851}
+
+\title{Igre na grafovima}
+
+\author{Filip Ćelepirović}
+
+\maketitle
+
+
+\includepdf[]{izvornik.pdf}
+
+\zahvala{Posebna zahvala mojim roditeljima na podršci tijekom cijelog školovanja. Također, želim zahvaliti mentorici prof. Nakić na potpori i pomoći u izradi ovog završnog rada.}
+
+\tableofcontents
+\listoffigures
+\listoftables
+
+
+
+\chapter{Uvod}
+\input{Uvod}
+
+\chapter{Osnovni pojmovi}
+\input{Osnovni_pojmovi}
+
+\chapter{Analiza kombinatornih igara}
+\input{Analiza_kombinatornih_igara}
+
+\chapter{Tehničke značajke razvijene aplikacije}
+\input{Tehničke_značajke_razvijene_aplikacije}
+
+\chapter{Upute za korištenje razvijene aplikacije}
+\input{Upute_za_korištenje_razvijene_aplikacije}
+
+\chapter{Zaključak}
+\input{Zakljucak}
+
+
+
+
+\bibliography{literatura.bib}
+\bibliographystyle{fer}
+
+\begin{sazetak}
+
+Ovaj rad proučava progresivne kombinatorne igre i predstavlja osnove analize pobjedničkih strategija. Primjenom Grundyjeve funkcije istražuju se osnovni rezultati i tehnike za odabir pobjedničkih strategija u nizu modifikacija igre Nim. Također, izrađena je interaktivna web aplikacija koja implementira jednu verziju igre Nim. Rezultati potvrđuju važnost matematičkog pristupa u analizi kombinatornih igara i njenu primjenjivost u inženjerskim područjima. 
+
+\kljucnerijeci{teorija grafova, kombinatorne igre, pobjedničke strategije, Grundyjeva funkcija, igra Nim, web aplikacija}
+
+\end{sazetak}
+
+
+\engtitle{Graph games}
+
+\begin{abstract}
+
+This thesis examines progressive combinatorial games and presents the fundamentals of analyzing winning strategies. Through the application of Grundy's function, basic results and techniques for selecting winning strategies in a series of modifications of the game Nim are explored. Additionally, an interactive web application has been developed to implement one version of the game Nim. The results confirm the importance of a mathematical approach in the analysis of combinatorial games and its applicability in engineering fields.
+
+\keywords{graph theory, combinatorial games, winning strategies, Grundy function, Nim game, web application}
+
+\end{abstract}
+
+
+\end{document}
